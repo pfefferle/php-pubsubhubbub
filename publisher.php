@@ -70,8 +70,8 @@ class PshbPublisher {
                      CURLOPT_POSTFIELDS => $post_string,
                      CURLOPT_USERAGENT => "PubSubHubbub-Publisher-PHP/1.0");
 
-      $ch = curl_init();
-	  curl_setopt_array($ch, $options);
+    $ch = curl_init();
+    curl_setopt_array($ch, $options);
 
     $response = curl_exec($ch);
     $this->last_response = $response;
