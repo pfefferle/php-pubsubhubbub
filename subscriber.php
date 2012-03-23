@@ -17,7 +17,7 @@ class PshbSubscriber {
   protected $callback_url;
   protected $credentials;
   // accepted values are "async" and "sync"
-  protected $verify = "sync";
+  protected $verify = "async";
   protected $verify_token;
   protected $lease_seconds;
 
