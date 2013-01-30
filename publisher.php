@@ -68,6 +68,7 @@ class PshbPublisher {
     $options = array(CURLOPT_URL => $url,
                      CURLOPT_POST => true,
                      CURLOPT_POSTFIELDS => $post_string,
+                     CURLOPT_RETURNTRANSFER => true,
                      CURLOPT_USERAGENT => "PubSubHubbub-Publisher-PHP/1.0");
 
     $ch = curl_init();
