@@ -8,7 +8,7 @@ include("publisher.php");
 $hub_url = "http://pubsubhubbub.appspot.com";
 $topic_url = "http://notizblog.org/feed/";
     
-$p = new Publisher($hub_url);
+$p = new PshbPublisher($hub_url);
 if ($p->publish_update($topic_url)) {
   echo "$topic_url was successfully published to $hub_url";
 } else {
