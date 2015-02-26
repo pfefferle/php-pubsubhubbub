@@ -30,7 +30,7 @@ $callback_url = "put your own endpoint here";
 $feed = "http://notizblog.org/feed/";
 
 // create a new subscriber
-$s = new Subscriber($hub_url, $callback_url);
+$s = new PshbSubscriber($hub_url, $callback_url);
 
 // subscribe to a feed
 $s->subscribe($feed);
